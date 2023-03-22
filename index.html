@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/index.js"></script>
+    <title>Calculadora de salario de trabajadores</title>
+</head>
+<body>
+    <!--Inicio container-->
+    <div id="container">
+        <!--Inicio Cabecera-->
+        <header id="header">
+            <div class="logo">
+                <h1>Tarea JS - Programa de salario</h1>
+            </div>
+        </header>
+        <!--Inicio del contenido mostrando todos los labels de entrada de datos y boton para enviar datos-->
+        <section id="content">
+            <aside id="aside">
+                <h2>Rellene el formulario</h2>
+            </aside>
+            <div id="projects">
+                <article class="project">
+                    <form class="formulario" id="form">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type='text' id="nombre" name="nombre" value="nombre"><br><br>
+
+                        <label for="apellido">Apellido:</label><br>
+                        <input type='text' id='apellido' name="apellido" value="apellido"><br><br>
+
+                        <label for="cedula">Cédula:</label><br>
+                        <input type='text' id='cedula' name="cedula" value="123"><br><br>
+
+                        <label for="horasDiurnas">Horas Diurnas:</label><br>
+                        <input type='number' id='horasDiurnas' name="horasDiurnas" value="3"><br><br>
+
+                        <label for="horasVespertinas">Horas Vespertinas:</label><br>
+                        <input type='number' id='horasVespertinas' name="horasVespertinas" value="3"><br><br>
+
+                        <label for="horasNocturnas">Horas Nocturnas:</label><br>
+                        <input type='number' id='horasNocturnas' name="horas" value="3"><br><br>
+
+                        <button onclick="calculateSalary()">Calcular Sueldo</button>
+                    </form>
+                    
+                    <div class="caja" id="caja">
+                    </div>
+
+                </article>
+
+        
+            </div>
+        </section>
+        <!--Fin contenido-->
+        <!--pie de pagina-->
+        <footer id="footer">
+            <div class="logo">
+                
+            </div>
+            <div class="info">
+                Desarrollado por Santiago Viloria &copy; 
+            </div>
+        </footer>
+        <!--Fin de pie pagina-->
+
+    </div>
+</body>
+</html>
